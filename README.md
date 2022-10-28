@@ -107,3 +107,22 @@ Invalid Email
 `64 Feb 2022`
 
 `24 Feb 2022 25:00`
+
+## Other notable issues
+
+### Feature Flaws
+
+* Overzealous input parsing for:
+- phone numbers
+- emails
+- names
+
+* Duplicate detection
+**These inputs should be considered "the same"**
+- alice | ALICE
+- alice lee | alice        lee
+
+* Error messages
+- Incorrect inputs should result in **specific** error messages
+
+
