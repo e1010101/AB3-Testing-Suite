@@ -112,17 +112,23 @@ Invalid Email
 
 ### Feature Flaws
 
-* Overzealous input parsing for:
+#### Overzealous input parsing for:
 - phone numbers
 - emails
 - names
 
-* Duplicate detection
+#### Duplicate detection
 **These inputs should be considered "the same"**
 - alice | ALICE
 - alice lee | alice        lee
 
-* Error messages
+#### Error messages
 - Incorrect inputs should result in **specific** error messages
+
+#### GUI
+- ALL GUI-dependent features should also be executable with a CLI
+
+#### Commands
+- Command prefixes should not be unnecessarily long (e.g. price/ should be pr/)
 
 
